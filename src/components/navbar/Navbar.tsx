@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../context/theme/themeContext";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import WbSunnyOutlinedIcon from "@mui/icons-material/WbSunnyOutlined";
@@ -13,6 +14,8 @@ import Avatar from "../../assets/avatar.jpg";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   return (
     <div className="navbar">
       <div className="left">
@@ -20,7 +23,11 @@ const Navbar = () => {
           <span>Social App</span>
         </Link>
         <HomeOutlinedIcon />
-        <DarkModeOutlinedIcon />
+        {theme === "dark" ? (
+          <WbSunnyOutlinedIcon onClick={toggleTheme} />
+        ) : (
+          <DarkModeOutlinedIcon onClick={toggleTheme} />
+        )}
         <GridViewOutlinedIcon />
         <div className="search">
           <SearchOutlinedIcon />
