@@ -1,4 +1,5 @@
 import "./leftBar.scss";
+import Avatar from "../../assets/avatar.jpg"
 import Friends from "../../assets/1.png";
 import Groups from "../../assets/2.png";
 import Market from "../../assets/3.png";
@@ -20,7 +21,7 @@ const LeftBar = () => {
         <div className="menu">
           <div className="user">
             <img
-              src="https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              src={Avatar}
               alt=""
             />
             <span>Asura</span>
