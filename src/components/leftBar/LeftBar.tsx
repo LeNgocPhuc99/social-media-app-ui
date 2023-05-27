@@ -1,5 +1,5 @@
 import "./leftBar.scss";
-import Avatar from "../../assets/avatar.jpg"
+import Avatar from "../../assets/avatar.webp"
 import Friends from "../../assets/1.png";
 import Groups from "../../assets/2.png";
 import Market from "../../assets/3.png";

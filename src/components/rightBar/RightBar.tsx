@@ -1,7 +1,7 @@
 import "./rightBar.scss";
 
 import "./rightBar.scss";
-import Avatar from "../../assets/avatar.jpg";
+import Avatar from "../../assets/avatar.webp";
 
 const RightBar = () => {
   return (

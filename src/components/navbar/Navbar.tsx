@@ -10,7 +10,7 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 
 import "./navbar.scss";
-import Avatar from "../../assets/avatar.jpg";
+import Avatar from "../../assets/avatar.webp";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
